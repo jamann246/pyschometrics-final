@@ -1,0 +1,10 @@
+"","Type","Variable","r","P-Value","Pass"
+"1","Criterion","dis_prepactions_count",0.672,0,TRUE
+"2","Convergent","disability",-0.005,0.636,FALSE
+"3","Convergent","care",0.105,0,FALSE
+"4","Convergent","numchild",0.139,0,FALSE
+"5","Convergent","numadult",0.065,0,FALSE
+"6","Convergent","homeownership",0.112,0,FALSE
+"7","Convergent","income_agg",0.165,0,FALSE
+"8","Convergent","rurality",-0.016,0.175,FALSE
+"9","Convergent","age",-0.093,0,FALSE

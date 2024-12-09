@@ -1,0 +1,14 @@
+---
+title: "Reliability and Validity Analysis of FEMA's National Household Survey"
+format: html
+bibliography: references.bib
+bibliographystyle: apa
+---
+
+Since 2013, the Federal Emergency Management Agency (FEMA) has
+
+[@psych]
+
+[@jiang2023]
+
+@fema2023nhs
