@@ -22,6 +22,8 @@ abstract: |
     Natural disasters pose significant risks to physical and mental health as well as financial stability. Household-level preparedness can be life-saving, yet there is limited psychometric analysis of tools measuring disaster preparedness affinity. This study analyzes the psychometric properties of the 2023 National Household Survey (NHS), conducted by FEMA, which includes items designed to measure preparedness affinity. Key findings indicate good reliability and criterion validity, but limited construct validity. Exploratory factor analysis supports a single-factor or two-factor model representing preparedness affinity. Further refinement of the scale is recommended to improve its psychometric robustness.
 ---
 
+
+
 ## Introduction
 
 The United Nations Office for Disaster Risk Reduction defines disasters as a serious disruption of the functioning of a community or a society at any scale due to hazardous events interacting with conditions of exposure, vulnerability and capacity, leading to one or more of the following: human, material, economic and environmental losses and impacts [@undrr_disaster_terminology]. Noteably, as global climate change progresses, it will increase the probability of extreme and hazardous weather events [@keim2008]. A critical component of mitigating the human, material, and economic cost of disasters is increasing government, community, and individual preparedness. As such, understanding the degree of individual preparedness and its driving factors is essential.
