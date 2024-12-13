@@ -113,6 +113,20 @@
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
 \KOMAoption{captions}{tableheading}
 \makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
@@ -229,7 +243,7 @@ affinity construct using exploratory factor analysis.
 
 \subsection{Methods}\label{methods}
 
-\paragraph{Sampling}\label{sampling}
+\subsubsection{Sampling}\label{sampling}
 
 The 2023 NHS was a cross-sectional survey that targeted adults aged 18
 and older who were U.S. residents, with a total of 7,604 complete
@@ -247,29 +261,32 @@ completed the survey in English. All responses included in this analysis
 were complete; however, some demographic variables were imputed by FEMA,
 including education, gender, race, disability, home-ownership, income
 and ethnicity. Across all of these variables, the average change from
-imputation was 0.51\%.
-
-\paragraph{Measurement}\label{measurement}
+imputation was 0.51\%. Further details on the sample demographics can be
+found in Table~\ref{tbl-sample}.
 
 Preparedness affinity was measured using a subset of items from the NHS,
 which were identified by FEMA as being relevant driving factors of this
-construct. The specific items can be found in Table~\ref{tbl-items}.
-
-\paragraph{Reliability and Validity}\label{reliability-and-validity}
+construct. The specific items can be found in Table~\ref{tbl-items}. The
+items each had a custom set of response options, none following a
+standard Likert-scale format. Ordinal response values were were sorted
+and converted in numeric values. The number of preparedness resources
+encountered was also included in the scale as a count. The sum of all of
+the items was used as the final numeric scale.
 
 Psychometric analysis was conducted to evaluate reliability using
 Cronbach's alpha for internal consistency, criterion validity by
 correlating the preparedness affinity scale with self-reported
-preparedness actions, and construct validity through correlations with
-demographic variables such as income, disability status, household size,
-home-ownership, age, and rural status.
-
-\paragraph{Exploratory Factor
-Analysis}\label{exploratory-factor-analysis}
-
+preparedness actions, and construct validity through pair-wise
+correlations with demographic variables such as income, disability
+status, household size, home-ownership, age, and rural status.
 Exploratory Factor Analysis using Principal Axis Factoring was used to
 assess the latent structure, with scree plots and eigenvalues guiding
-the selection of one-, two-, and four-factor models.
+the selection of one-, two-, and four-factor models. Due to the
+correlations that existed between items, an oblique rotation was applied
+to the data prior to factoring. Principal Axis Factoring was then
+applied using all three potential factor structures. Cronbach's alpha
+was calculated for each of the component factors in the two- and
+four-factor models.
 
 \subsection{Results}\label{results}
 
@@ -321,29 +338,84 @@ References
 
 Appendix
 
+\begin{table}
+
+\caption{\label{tbl-sample}Survey Sample}
+
+\centering{
+
+\begin{tabular}[t]{ll}
+\toprule
+  & Overall\\
+\midrule
+ & (N=7604)\\
+\addlinespace[0.3em]
+\multicolumn{2}{l}{\textbf{Age}}\\
+\hspace{1em}18-19 & 239 (3.1\%)\\
+\hspace{1em}20-29 & 1296 (17.0\%)\\
+\hspace{1em}30-39 & 1595 (21.0\%)\\
+\hspace{1em}40-49 & 1102 (14.5\%)\\
+\hspace{1em}50-59 & 1139 (15.0\%)\\
+\hspace{1em}60-69 & 1093 (14.4\%)\\
+\hspace{1em}70-79 & 809 (10.6\%)\\
+\hspace{1em}80+ & 331 (4.4\%)\\
+\addlinespace[0.3em]
+\multicolumn{2}{l}{\textbf{Sex}}\\
+\hspace{1em}Female & 3918 (51.5\%)\\
+\hspace{1em}Male & 3631 (47.8\%)\\
+\hspace{1em}Third-Gender/Other & 55 (0.7\%)\\
+\addlinespace[0.3em]
+\multicolumn{2}{l}{\textbf{Race}}\\
+\hspace{1em}White & 5050 (66.4\%)\\
+\hspace{1em}Black or African American & 981 (12.9\%)\\
+\hspace{1em}Two or More Races & 408 (5.4\%)\\
+\hspace{1em}Other & 360 (4.7\%)\\
+\hspace{1em}American Indian or Alaska Native & 345 (4.5\%)\\
+\hspace{1em}Asian & 338 (4.4\%)\\
+\hspace{1em}Native Hawaiian or Other Pacific Islander & 122 (1.6\%)\\
+\addlinespace[0.3em]
+\multicolumn{2}{l}{\textbf{Homeownership}}\\
+\hspace{1em}Own & 4626 (60.8\%)\\
+\hspace{1em}Rent & 2978 (39.2\%)\\
+\addlinespace[0.3em]
+\multicolumn{2}{l}{\textbf{Income}}\\
+\hspace{1em}\$100K + & 1696 (22.3\%)\\
+\hspace{1em}\$50,000 to \$99,999 & 2364 (31.1\%)\\
+\hspace{1em}Less than \$50k & 3544 (46.6\%)\\
+\addlinespace[0.3em]
+\multicolumn{2}{l}{\textbf{Disability}}\\
+\hspace{1em}No Disability & 5749 (75.6\%)\\
+\hspace{1em}Disability & 1855 (24.4\%)\\
+\bottomrule
+\end{tabular}
+
+}
+
+\end{table}%
+
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.3521}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6479}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2394}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7606}}@{}}
 \caption{Preparedness Affinity Items}\label{tbl-items}\tabularnewline
 \toprule\noalign{}
 \endfirsthead
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-Label & Question \\
+\textbf{Label} & \textbf{Question} \\
 dis\_prep & Have you considered preparing for a disaster? \\
 dis\_soc & Thinking about preparing yourself for a disaster, which of
 the following best represents your degree of preparedness? \\
 dis\_exp & Have you or your family ever experienced the impacts of a
 disaster? \\
-dis\_awareness & In the past year, what information have you read, seen,
-or heard about how to get better prepared for a disaster? \\
 dis\_perception & Thinking about the area you live in, how likely would
 it be for a disaster to impact you? \\
 dis\_stepshelp & How much would taking steps to prepare help you get
 through a disaster in your area? \\
 dis\_confidence & How confident are you that you can take steps to
 prepare for a disaster in your area? \\
+dis\_awareness & In the past year, what information have you read, seen,
+or heard about how to get better prepared for a disaster? \\
 \end{longtable}
 
 \phantomsection\label{refs}

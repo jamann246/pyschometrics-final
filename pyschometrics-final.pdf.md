@@ -18,6 +18,8 @@ format:
             - bottom=1in
             - left=1in
             - right=1in
+echo: false
+warning: false
 abstract: |
     Natural disasters pose significant risks to physical and mental health as well as financial stability. Household-level preparedness can be life-saving, yet there is limited psychometric analysis of tools measuring disaster preparedness affinity. This study analyzes the psychometric properties of the 2023 National Household Survey (NHS), conducted by FEMA, which includes items designed to measure preparedness affinity. Key findings indicate good reliability and criterion validity, but limited construct validity. Exploratory factor analysis supports a single-factor or two-factor model representing preparedness affinity. Further refinement of the scale is recommended to improve its psychometric robustness.
 ---
@@ -32,21 +34,13 @@ The Federal Emergency Management Agency (FEMA) has conducted an annual National 
 
 ## Methods
 
-#### Sampling
+### Sampling
 
-The 2023 NHS was a cross-sectional survey that targeted adults aged 18 and older who were U.S. residents, with a total of 7,604 complete responses. It was distributed online via invite, and was administered confidentially. Populations at higher risk for specific hazards (7%, n=525) and underrepresented groups, including American Indian, Alaska Native, Native Hawaiian, and Pacific Islanders (7%, n=517) were over-sampled. Additional demographic characteristics such as age, gender, race, ethnicity, and income were monitored while the survey was live and compared to soft quotas which were created using U.S. Census Bureau data from the 2021 Five-Year American Community Survey and the 2020 Decennial Census of Island Are. Seven percent (n=525) of participants completed the survey in Spanish, all other participants completed the survey in English. All responses included in this analysis were complete; however, some demographic variables were imputed by FEMA, including education, gender, race, disability, home-ownership, income and ethnicity. Across all of these variables, the average change from imputation was 0.51%.
+The 2023 NHS was a cross-sectional survey that targeted adults aged 18 and older who were U.S. residents, with a total of 7,604 complete responses. It was distributed online via invite, and was administered confidentially. Populations at higher risk for specific hazards (7%, n=525) and underrepresented groups, including American Indian, Alaska Native, Native Hawaiian, and Pacific Islanders (7%, n=517) were over-sampled. Additional demographic characteristics such as age, gender, race, ethnicity, and income were monitored while the survey was live and compared to soft quotas which were created using U.S. Census Bureau data from the 2021 Five-Year American Community Survey and the 2020 Decennial Census of Island Are. Seven percent (n=525) of participants completed the survey in Spanish, all other participants completed the survey in English. All responses included in this analysis were complete; however, some demographic variables were imputed by FEMA, including education, gender, race, disability, home-ownership, income and ethnicity. Across all of these variables, the average change from imputation was 0.51%. Further details on the sample demographics can be found in @tbl-sample.
 
-#### Measurement
+Preparedness affinity was measured using a subset of items from the NHS, which were identified by FEMA as being relevant driving factors of this construct. The specific items can be found in @tbl-items. The items each had a custom set of response options, none following a standard Likert-scale format. Ordinal response values were were sorted and converted in numeric values. The number of preparedness resources encountered was also included in the scale as a count. The sum of all of the items was used as the final numeric scale.
 
-Preparedness affinity was measured using a subset of items from the NHS, which were identified by FEMA as being relevant driving factors of this construct. The specific items can be found in @tbl-items.
-
-#### Reliability and Validity
-
-Psychometric analysis was conducted to evaluate reliability using Cronbach’s alpha for internal consistency, criterion validity by correlating the preparedness affinity scale with self-reported preparedness actions, and construct validity through correlations with demographic variables such as income, disability status, household size, home-ownership, age, and rural status.
-
-#### Exploratory Factor Analysis
-
-Exploratory Factor Analysis using Principal Axis Factoring was used to assess the latent structure, with scree plots and eigenvalues guiding the selection of one-, two-, and four-factor models.
+Psychometric analysis was conducted to evaluate reliability using Cronbach’s alpha for internal consistency, criterion validity by correlating the preparedness affinity scale with self-reported preparedness actions, and construct validity through pair-wise correlations with demographic variables such as income, disability status, household size, home-ownership, age, and rural status. Exploratory Factor Analysis using Principal Axis Factoring was used to assess the latent structure, with scree plots and eigenvalues guiding the selection of one-, two-, and four-factor models. Due to the correlations that existed between items, an oblique rotation was applied to the data prior to factoring. Principal Axis Factoring was then applied using all three potential factor structures. Cronbach's alpha was calculated for each of the component factors in the two- and four-factor models.
 
 ## Results
 
@@ -68,15 +62,69 @@ References
 
 Appendix
 
+
+::: {#tbl-sample .cell .tbl-cap-location-top tbl-cap='Survey Sample'}
+::: {.cell-output-display}
+
+\begin{tabular}[t]{ll}
+\toprule
+  & Overall\\
+\midrule
+ & (N=7604)\\
+\addlinespace[0.3em]
+\multicolumn{2}{l}{\textbf{Age}}\\
+\hspace{1em}18-19 & 239 (3.1\%)\\
+\hspace{1em}20-29 & 1296 (17.0\%)\\
+\hspace{1em}30-39 & 1595 (21.0\%)\\
+\hspace{1em}40-49 & 1102 (14.5\%)\\
+\hspace{1em}50-59 & 1139 (15.0\%)\\
+\hspace{1em}60-69 & 1093 (14.4\%)\\
+\hspace{1em}70-79 & 809 (10.6\%)\\
+\hspace{1em}80+ & 331 (4.4\%)\\
+\addlinespace[0.3em]
+\multicolumn{2}{l}{\textbf{Sex}}\\
+\hspace{1em}Female & 3918 (51.5\%)\\
+\hspace{1em}Male & 3631 (47.8\%)\\
+\hspace{1em}Third-Gender/Other & 55 (0.7\%)\\
+\addlinespace[0.3em]
+\multicolumn{2}{l}{\textbf{Race}}\\
+\hspace{1em}White & 5050 (66.4\%)\\
+\hspace{1em}Black or African American & 981 (12.9\%)\\
+\hspace{1em}Two or More Races & 408 (5.4\%)\\
+\hspace{1em}Other & 360 (4.7\%)\\
+\hspace{1em}American Indian or Alaska Native & 345 (4.5\%)\\
+\hspace{1em}Asian & 338 (4.4\%)\\
+\hspace{1em}Native Hawaiian or Other Pacific Islander & 122 (1.6\%)\\
+\addlinespace[0.3em]
+\multicolumn{2}{l}{\textbf{Homeownership}}\\
+\hspace{1em}Own & 4626 (60.8\%)\\
+\hspace{1em}Rent & 2978 (39.2\%)\\
+\addlinespace[0.3em]
+\multicolumn{2}{l}{\textbf{Income}}\\
+\hspace{1em}\$100K + & 1696 (22.3\%)\\
+\hspace{1em}\$50,000 to \$99,999 & 2364 (31.1\%)\\
+\hspace{1em}Less than \$50k & 3544 (46.6\%)\\
+\addlinespace[0.3em]
+\multicolumn{2}{l}{\textbf{Disability}}\\
+\hspace{1em}No Disability & 5749 (75.6\%)\\
+\hspace{1em}Disability & 1855 (24.4\%)\\
+\bottomrule
+\end{tabular}
+
+
+:::
+:::
+
+
 |                |                                                                                                                       |
-|-------------------------|----------------------------------------------|
-| Label          | Question                                                                                                              |
+|-----------------|------------------------------------------------------|
+| **Label**      | **Question**                                                                                                          |
 | dis_prep       | Have you considered preparing for a disaster?                                                                         |
 | dis_soc        | Thinking about preparing yourself for a disaster, which of the following best represents your degree of preparedness? |
 | dis_exp        | Have you or your family ever experienced the impacts of a disaster?                                                   |
-| dis_awareness  | In the past year, what information have you read, seen, or heard about how to get better prepared for a disaster?     |
 | dis_perception | Thinking about the area you live in, how likely would it be for a disaster to impact you?                             |
 | dis_stepshelp  | How much would taking steps to prepare help you get through a disaster in your area?                                  |
 | dis_confidence | How confident are you that you can take steps to prepare for a disaster in your area?                                 |
+| dis_awareness  | In the past year, what information have you read, seen, or heard about how to get better prepared for a disaster?     |
 
 : Preparedness Affinity Items {#tbl-items}

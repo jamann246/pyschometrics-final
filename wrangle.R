@@ -50,7 +50,11 @@ nhs_raw <- readxl::read_excel(
 
     # content
     disability, care, numadult, numchild, age,
-    homeownership, income_agg, rurality
+    homeownership, income_agg, rurality,
+
+    # other sample stuff
+    primarylanguage, sex, education, ethnicity, race_selfid
+
   ) |> 
   dplyr::mutate(
     dplyr::across(
@@ -58,6 +62,8 @@ nhs_raw <- readxl::read_excel(
       ~dplyr::if_else(.x == "Blank", NA, .x)
     )
   )
+
+write.csv(nhs_raw, "nhs-raw.csv")
 
 
 nhs <- nhs_raw |> 
