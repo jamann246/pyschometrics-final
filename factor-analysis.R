@@ -124,6 +124,7 @@ psych::alpha(nhs |> dplyr::select(dis_perception, dis_exp)) # 0.46
 
 # the two factor model provides a more promising set of distinct factors
 # looking at the factor diagram
-psych::fa.diagram(two_factor)
+psych::fa.diagram(four_factor)
 
 
+readr::write_rds(list(single_factor, two_factor, four_factor), file = "factor-results.rds")

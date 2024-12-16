@@ -22,3 +22,4 @@ alpha_results <- psych::alpha(
 
 alpha_results
 
+readr::write_rds(alpha_results, file = "alpha-results.rds")

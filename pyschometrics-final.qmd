@@ -7,8 +7,6 @@ format:
         pdf-engine: lualatex
         fontfamily: times
         linestretch: 2
-        keep-md: true
-        keep-tex: true
         bibliography: references.bib
         reference-location: section
         bibliographystyle: apa
@@ -21,50 +19,59 @@ format:
 echo: false
 warning: false
 abstract: |
-    Natural disasters pose significant risks to physical and mental health as well as financial stability. Household-level preparedness can be life-saving, yet there is limited psychometric analysis of tools measuring disaster preparedness affinity. This study analyzes the psychometric properties of the 2023 National Household Survey (NHS), conducted by FEMA, which includes items designed to measure preparedness affinity. Key findings indicate good reliability and criterion validity, but limited construct validity. Exploratory factor analysis supports a single-factor or two-factor model representing preparedness affinity. Further refinement of the scale is recommended to improve its psychometric robustness.
+     Natural disasters pose significant risks to physical and mental health as well as financial stability. Household-level preparedness can be life-saving, yet there is limited psychometric analysis of tools measuring disaster preparedness affinity. This study analyzes the psychometric properties of the 2023 National Household Survey (NHS), conducted by FEMA, which includes items designed to measure preparedness affinity. Key findings indicate good reliability and criterion validity, but limited construct validity. Exploratory factor analysis supports a single-factor model representing preparedness affinity. Further refinement of the scale is recommended to improve its psychometric robustness. Disclaimer: FEMA and the Federal Government cannot vouch for the data or analyses derived from these data after the data have been retrieved from the Agency's website.
+
 ---
 
 ## Introduction
 
-The United Nations Office for Disaster Risk Reduction defines disasters as a serious disruption of the functioning of a community or a society at any scale due to hazardous events interacting with conditions of exposure, vulnerability and capacity, leading to one or more of the following: human, material, economic and environmental losses and impacts [@undrr_disaster_terminology]. Noteably, as global climate change progresses, it will increase the probability of extreme and hazardous weather events [@keim2008]. A critical component of mitigating the human, material, and economic cost of disasters is increasing government, community, and individual preparedness. As such, understanding the degree of individual preparedness and its driving factors is essential.
+The United Nations Office for Disaster Risk Reduction defines disasters as a serious disruption of the functioning of a community or a society at any scale due to hazardous events interacting with conditions of exposure, vulnerability and capacity, leading to one or more of the following: human, material, economic and environmental losses and impacts [@undrr_disaster_terminology]. Notably, as global climate change progresses, it will increase the probability of extreme and hazardous weather events [@keim2008]. Quantifying this increase could help underscore the urgency of mitigation and adaptation strategies. A critical component of mitigating the human, material, and economic cost of disasters is increasing government, community, and individual preparedness. In fact, the federal government estimates that for every dollar spent on pre-disaster mitigation and preparedness efforts can prevent up to six dollars in losses from potential disasters [@Multihazard2018]. As such, understanding the degree of individual preparedness is essential, as it can help government and non-governemnt organizations design and target programs to improve it.
 
-The Federal Emergency Management Agency (FEMA) has conducted an annual National Household Survey (NHS) to measure household disaster preparedness actions and attitudes since 2013. In the public release of the 2023 results from the survey four concepts, made up of 7 items included in the survey, were identified as contributing to disaster preparedness affinity: awareness of information, disaster experience, preparedness efficacy, and disaster risk perception [@fema2023nhs]. These items have not been formally defined as a scale to measure individual preparedness affinity, but it is worth exploring the psychometric qualities of them as a scale due to the scale and resources behind the larger survey they are delivered in. This study aims to assess the internal consistency and reliability of these NHS items related to disaster preparedness affinity, evaluate the criterion validity of these items based on self-reported preparedness actions, assess construct validity using economic and household demographic data, and explore the latent structure of the preparedness affinity construct using exploratory factor analysis.
+The Federal Emergency Management Agency (FEMA) has conducted an annual National Household Survey (NHS) to measure household disaster preparedness actions and attitudes since 2013. The results from this survey are used by FEMA as well as state and local emergency response agencies and non-government organizations to monitor the expected resilience of the nation, and to better understand what drives preparedness at the individual household level. In the public release of the 2023 results from the survey four concepts, made up of 7 of the items included in the survey, were identified as contributing to disaster preparedness affinity: awareness of information, disaster experience, preparedness efficacy, and disaster risk perception [@fema2023nhs]. These items have not been formally defined as a scale to measure individual preparedness affinity, but it is worth exploring the psychometric qualities of them as a scale due to the scale and resources behind the larger survey they are delivered in.
+
+This study aims to assess the internal consistency and reliability of these NHS items related to disaster preparedness affinity, evaluate the criterion validity of these items based on self-reported preparedness actions, assess construct validity using economic and household demographic data, and explore the latent structure of the preparedness affinity construct using exploratory factor analysis.
 
 ## Methods
 
-### Sampling
-
 The 2023 NHS was a cross-sectional survey that targeted adults aged 18 and older who were U.S. residents, with a total of 7,604 complete responses. It was distributed online via invite, and was administered confidentially. Populations at higher risk for specific hazards (7%, n=525) and underrepresented groups, including American Indian, Alaska Native, Native Hawaiian, and Pacific Islanders (7%, n=517) were over-sampled. Additional demographic characteristics such as age, gender, race, ethnicity, and income were monitored while the survey was live and compared to soft quotas which were created using U.S. Census Bureau data from the 2021 Five-Year American Community Survey and the 2020 Decennial Census of Island Are. Seven percent (n=525) of participants completed the survey in Spanish, all other participants completed the survey in English. All responses included in this analysis were complete; however, some demographic variables were imputed by FEMA, including education, gender, race, disability, home-ownership, income and ethnicity. Across all of these variables, the average change from imputation was 0.51%. Further details on the sample demographics can be found in @tbl-sample.
 
-Preparedness affinity was measured using a subset of items from the NHS, which were identified by FEMA as being relevant driving factors of this construct. The specific items can be found in @tbl-items. The items each had a custom set of response options, none following a standard Likert-scale format. Ordinal response values were were sorted and converted in numeric values. The number of preparedness resources encountered was also included in the scale as a count. The sum of all of the items was used as the final numeric scale.
+Preparedness affinity was measured using a subset of items from the NHS, which were identified by FEMA as being relevant driving factors of this construct. The specific items can be found in @tbl-items. The items each had a custom set of response options, none following a standard Likert-scale format. Ordinal response values were sorted and converted into numeric values. The number of preparedness resources encountered was also included in the scale as a count. The sum of all of the items was used as the final numeric scale.
 
-Psychometric analysis was conducted to evaluate reliability using Cronbach’s alpha for internal consistency, criterion validity by correlating the preparedness affinity scale with self-reported preparedness actions, and construct validity through pair-wise correlations with demographic variables such as income, disability status, household size, home-ownership, age, and rural status. Exploratory Factor Analysis using Principal Axis Factoring was used to assess the latent structure, with scree plots and eigenvalues guiding the selection of one-, two-, and four-factor models. Due to the correlations that existed between items, an oblique rotation was applied to the data prior to factoring. Principal Axis Factoring was then applied using all three potential factor structures. Cronbach's alpha was calculated for each of the component factors in the two- and four-factor models.
+Internal consistency reliability was measured using Cronbach’s alpha. Criterion validity was assessed by measuring the pair-wise correlation between the preparedness affinity scale with self-reported preparedness actions (a strong behavioral indicator), and construct validity through pair-wise correlations with demographic variables such as income, disability status, household size, home-ownership, age, and rural status. Exploratory Factor Analysis using Principal Axis Factoring was used to assess the latent structure. Principlal Axis Factoring was selected over Principal Comonent Analysis because for this particular application the objective was to assess the validity of FEMAs claim that the four driving factors of preparedness are awareness of information, disaster experience, preparedness efficacy, and disaster risk perception. A scree plot was used to guide the selection of a one factor model. However, becuase the study was interested specifically in measuring the validity of the four factor model that was identified, two- and four-factor models were also generated. Before any factor analysis was conducted, tests were completed to ensure factor analysis was appropriate. First, Bartlett's test was applied to ensure the correlation matrix was significantly different from an identity matrix. The p-value for this test was much smaller than 0.05, allowing for rejection the null hypothesis of Bartlett's test, indicating that there are significant relationships among the variables. Next, the Kaiser-Meyer-Olkin test was applied to measure the adequacy of the sample for factor analysis by quantifying the proportion of variance among your variables that might be common variance. The overall KMO value was 0.84, indicating excellent factor adequacy, and that a factor analysis is appropriate for this sample. Due to the correlations that existed between items, an oblique rotation was applied to the data prior to factoring. Principal Axis Factoring was then applied using all three potential factor structures for completeness. Cronbach's alpha was calculated for each of the component factors in the two- and four-factor models.
 
 ## Results
 
-The preparedness affinity scale achieved a Cronbach’s alpha of 0.75, indicating good internal consistency. Preparedness affinity demonstrated a moderately strong correlation (r = 0.67) with the total number of preparedness actions taken, supporting good criterion validity. However, no substantial evidence of convergent construct validity was found, as correlations with demographic variables were negligible (r \< 0.2), suggesting limited alignment with external constructs. Exploratory Factor Analysis indicated that a single-factor model explained 36% of the variance with strong factor loadings across all items. A two-factor model explained 43% of the variance with reduced complexity and was interpreted as “Disaster Awareness” and “Risk Perception” with Cronbach’s alphas of 0.67 and 0.68, respectively. The four-factor model failed to produce distinct factors, with overlapping loadings and Cronbach’s alphas as low as 0.46 for individual factors.
+The preparedness affinity scale demonstrated good internal consistency reliability with a Cronbach’s alpha of 0.75. However, the considerable difference between the standardized (0.81) and unstandardized alpha values suggests a difference in variation across items, which is likely a result of the different response sets available (see @tbl-alpha). Additionally, it was found that the raw alpha value would increase to 0.79 if the item counting the number of sources participants encountered that build awareness of preparedness resources (see @tbl-alpha-drop).
+
+Preparedness affinity demonstrated a moderately strong correlation (r = 0.67) with the total number of preparedness actions taken, providing evidence for good criterion validity. It was hypothesized that disability status, caretaker status, the number of children and adults in a household, homeownership status, income, rurality, and age might have convergent relationships with preparedness affinity and support construct validity. However, no substantial evidence of convergent construct validity was found, as correlations with demographic variables were negligible (r < 0.2), suggesting limited alignment with external constructs(see @tbl-correlations). There were no reasonable candidates to assess divergent validity in the dataset. 
+
+An initial scree plot (see @fig-scree-plot) indicated that only a one factor model would be appropriate according to the Kaiser-Guttman rule. However, there were large drops in the eigen values after two and four factors. While these drops do not necessarily suggest valid factor structures, they were of interest because of the hypothesized factor structure. Exploratory Factor Analysis indicated that a single-factor model explained 36% of the variance with strong factor loadings across all items (see @tbl-single-factor). A two-factor model explained 43% of the variance with reduced complexity and was interpreted as “Disaster Awareness” and “Risk Perception” with Cronbach’s alphas of 0.67 and 0.68, respectively (see @tbl-two-factor). As expected, the four-factor model failed to produce distinct factors with overlapping loadings (see @tbl-four-factor). The factors that it did identify, however, were precieved self preparedness ($\alpha = 0.76$), preparedness efficacy ($\alpha = 0.69$), disaster awareness ($\alpha = 0.46$), and risk perception ($\alpha = 0.46$). These only somewhat aligned with the hypothesized factors. 
 
 ## Discussion
 
-The NHS preparedness affinity items demonstrated strong reliability and acceptable criterion validity but lacked robust construct validity. Factor analysis suggests that the preparedness affinity construct may be best represented by a single factor, although a two-factor model also provides a meaningful interpretation. The scale’s reliability decreases when disaggregated into multiple factors, indicating redundancy among the hypothesized components. Comprehensive sampling ensured representation of high-risk populations, and initial evidence supports the use of NHS items as a psychometric instrument for preparedness affinity.
+The NHS preparedness affinity items demonstrated strong reliability and acceptable criterion validity but lacked robust construct validity. The preparedness affinity scale’s internal consistency, as indicated by a Cronbach’s alpha of 0.75 (standardized alpha = 0.81), reflects a degree of coherence among the items despite their differing response formats. This finding supports the potential utility of the NHS items for assessing preparedness affinity. The moderately strong correlation (r = 0.67) between preparedness affinity and self-reported preparedness actions further substantiates the scale’s criterion validity, emphasizing its alignment with behavioral indicators of preparedness.
+
+However, the scale showed negligible correlations with key demographic variables hypothesized to converge with preparedness affinity, including income, rurality, and disability status. These results suggest limited construct validity, potentially due to the preparedness affinity construct not aligning well with broader sociodemographic factors or the items failing to fully capture the multidimensional nature of preparedness. Possible reasons for these limitations include the inherent complexity of preparedness behaviors, cultural or contextual variability in disaster risk perception, and the diversity of factors influencing preparedness that may not be adequately represented in the current items. Addressing these issues in future research could involve expanding the item pool to capture a broader range of preparedness dimensions or incorporating qualitative methods to better understand underlying constructs. This issue is compounded by the lack of evidence for divergent validity, leaving the boundaries of the construct underexplored.
+
+Factor analysis revealed that the preparedness affinity construct may be best represented as a unidimensional scale, as a single-factor model explained 36% of the variance with strong loadings across all items. Although a two-factor model (interpreted as “Disaster Awareness” and “Risk Perception”) explained a slightly greater proportion of variance (43%), its reliability was lower, with Cronbach’s alphas of 0.67 and 0.68, respectively. The four-factor model, corresponding to FEMA’s hypothesized structure, failed to yield distinct or reliable factors, with overlapping loadings and Cronbach’s alphas as low as 0.46. These findings challenge the validity of FEMA’s conceptual framework and suggest redundancy among the hypothesized components.
+
+Despite the limted evidence for construct validity and complex factor structure, the selected NHS items offer a promising foundation for assessing preparedness affinity, particularly given the comprehensive and representative sampling strategy employed in the survey. The inclusion of high-risk and underrepresented populations enhances the generalizability of the findings and underscores the scale’s potential utility in diverse contexts.
 
 ## Limitations
 
-The cross-sectional design of the NHS precluded assessment of test-retest reliability, and construct validity analysis was limited by the available demographic variables.
+This study faced several limitations. The cross-sectional design of the NHS precluded the assessment of test-retest reliability, limiting insights into the stability of the preparedness affinity scale over time. Construct validity analysis was constrained by the available demographic variables, many of which exhibited negligible correlations with the scale. Additionally, inconsistent response formats across items likely introduced variability in item-level responses, contributing to the observed discrepancy between standardized and unstandardized alpha values. For example, some items used binary response options (e.g., "Yes" or "No"), while others employed ordinal scales with varying numbers of categories. Such discrepancies may have also affected participants' interpretation and response tendencies, undermining the overall coherence of the scale. This issue underscores the need for more uniform response sets to enhance scale coherence. Furthermore, the scale’s reliance on self-reported data may introduce social desirability bias, potentially inflating associations with preparedness actions. While there were quotas met on racial, ethnic, and hazard risk diversity within the US, there is evidence to suggest that disaster risk perception - a substantial component of this scale - is culturally dependent [@gierlach2010]. Therefore, it would be inappropriate to use it outside of the United States without further adjustment and study.
 
--   inconsistent response sets
-
--   construct validity sucks - need evidence for convergent and divergent
-
--   
+Finally, the factor analysis results highlight the need for additional evidence to support the dimensionality of the preparedness affinity construct. While the one- and two-factor models offer some interpretive value, the four-factor model’s poor performance raises concerns about the validity of the hypothesized structure. This poor performance suggests significant redundancy and overlap among the hypothesized factors, which undermines their distinction and reliability. Such findings challenge FEMA's conceptual framework by indicating that the proposed components may not reflect separate dimensions of preparedness affinity as intended. This misalignment raises critical questions about the theoretical assumptions guiding the model and highlights the need for reevaluating its foundational constructs. Future research should incorporate alternative factor structures and validation techniques to refine the scale.
 
 ## Conclusion
 
-The 2023 NHS provides a promising foundation for measuring disaster preparedness affinity. However, further refinement is needed to enhance its validity and applicability in broader contexts. Future research should develop and validate a more comprehensive model of preparedness affinity, include additional measures for content and construct validity, and conduct longitudinal studies to evaluate test-retest reliability.
+The 2023 NHS provides a promising foundation for measuring disaster preparedness affinity, offering strong reliability and acceptable criterion validity. However, the scale’s limited construct validity and inconsistent response formats highlight the need for further refinement. Future research should focus on developing a more comprehensive model of preparedness affinity, incorporating additional measures to establish convergent and divergent validity. Longitudinal studies are essential to evaluate test-retest reliability, while uniform response formats could enhance scale coherence. With these advancements, the NHS preparedness affinity scale could become a robust tool for assessing and promoting disaster preparedness at the individual and community levels.
 
-References
+::: {.pdf}
+\newpage
+:::
 
-Appendix
+## Figures and Tables {.appendix}
 
 ```{r}
 #| label: tbl-sample
@@ -93,15 +100,723 @@ table1::t1kable()
 
 ```
 
-|                |                                                                                                                       |
-|------------------|------------------------------------------------------|
-| **Label**      | **Question**                                                                                                          |
-| dis_prep       | Have you considered preparing for a disaster?                                                                         |
-| dis_soc        | Thinking about preparing yourself for a disaster, which of the following best represents your degree of preparedness? |
-| dis_exp        | Have you or your family ever experienced the impacts of a disaster?                                                   |
-| dis_perception | Thinking about the area you live in, how likely would it be for a disaster to impact you?                             |
-| dis_stepshelp  | How much would taking steps to prepare help you get through a disaster in your area?                                  |
-| dis_confidence | How confident are you that you can take steps to prepare for a disaster in your area?                                 |
-| dis_awareness  | In the past year, what information have you read, seen, or heard about how to get better prepared for a disaster?     |
+```{r}
+#| label: tbl-items
+#| tbl-cap: "Preparedness Affinity Items"
+#| tbl-cap-location: top
 
-: Preparedness Affinity Items {#tbl-items}
+codebook <- readxl::read_excel(
+  path = "./fema_national_household_survey_2023/fema_national_household_survey_2023_data_and_codebook.xlsx",
+  sheet = "Codebook",
+  skip = 0) |>
+dplyr::select(c(1,9)) |>
+dplyr::filter(
+    Variable %in% c(
+        'dis_prep', 
+        'dis_soc', 
+        'dis_exp',  # experience
+        'dis_perception', # risk perception
+        'dis_stepshelp', # efficacy
+        'dis_confidence',  # efficacy
+        'dis_awareness_effect', 
+        'dis_awareness_a-dis_awareness_n')
+              
+             )
+
+codebook |> gt::gt() |> 
+    gt::cols_width(
+        `Survey Item Text or Description` ~ px(400)  # Set a maximum width for the column to force wrapping
+      )
+```
+
+```{r}
+#| label: tbl-alpha
+#| tbl-cap: "Unstandardized and Standardized Cronbach's Alpha"
+#| tbl-cap-location: top
+
+alpha <- readr::read_rds("alpha-results.rds")
+
+alpha$total |> 
+    dplyr::select(
+        "Raw Alpha" = raw_alpha,
+        "Std. Alpha" = std.alpha, 
+        "Median R" = median_r
+    ) |>
+    dplyr::mutate(dplyr::across(dplyr::where(is.numeric), ~round(.x, digits=3))) |>
+    gt::gt()
+
+```
+
+```{r}
+#| label: tbl-alpha-drop
+#| tbl-cap: "Cronbach's Alpha Item Details"
+#| tbl-cap-location: top
+
+alpha <- readr::read_rds("alpha-results.rds")
+
+alpha$alpha.drop |> 
+    tibble::rownames_to_column() |>
+    dplyr::select(
+        "Item" = rowname,
+        "Raw Alpha" = raw_alpha,
+        "Std. Alpha" = std.alpha,
+        "Alpha SE" = `alpha se`
+    ) |>
+    dplyr::mutate(
+        dplyr::across(dplyr::where(is.numeric), ~round(.x, digits=3)),
+        Item = stringr::str_replace_all(
+            stringr::str_replace_all(Item, "_"," "), "dis","disaster"
+        ) |> 
+        stringr::str_to_title()
+    ) |>
+    gt::gt()
+```
+
+```{r}
+#| label: tbl-correlations
+#| tbl-cap: "Criterion and Construct Validity"
+#| tbl-cap-location: top
+
+validity <- read.csv("validity-results.csv") |> 
+    dplyr::mutate(
+        dplyr::across(dplyr::where(is.numeric), ~round(.x, digits=3)),
+        Item = stringr::str_replace_all(
+            Variable, "_"," "
+            ) |> 
+        stringr::str_to_title()) |> 
+        dplyr::select(Type, Item, r, P.Value, Pass)
+
+validity |> gt::gt()
+```
+
+```{r}
+#| label: fig-scree-plot
+#| fig-cap: "Scree Plot"
+#| fig-cap-location: top
+
+nhs <- read.csv("nhs-clean.csv") |> 
+  dplyr::select(
+    dis_prep, 
+    dis_soc, 
+    dis_exp, 
+    dis_perception,
+    dis_stepshelp, 
+    dis_confidence, 
+    dis_awareness_effect, 
+    dis_awareness_count
+  )
+
+# scree plot
+psych::scree(cor(nhs), pc=FALSE)
+```
+
+```{r}
+#| label: tbl-single-factor
+#| tbl-cap: "Factor Loadings of 1 Factor PAF"
+#| tbl-cap-location: top
+
+factor_models <- readr::read_rds(file = "factor-results.rds")
+
+loadings1 <- factor_models[[1]]$loadings[,1] |> 
+  data.frame() |> 
+  tibble::rownames_to_column(var = "Item") |> 
+  dplyr::rename("Preparedness Affinity"=2) |> 
+  dplyr::mutate(
+        dplyr::across(dplyr::where(is.numeric), ~round(.x, digits=3)),
+        Item = stringr::str_replace_all(
+            stringr::str_replace_all(Item, "_"," "), "dis","disaster"
+        ) |> stringr::str_to_title()
+        )
+
+loadings2 <- factor_models[[2]]$loadings[,1:2] |> 
+  data.frame() |> 
+  tibble::rownames_to_column(var = "Item") |> 
+  dplyr::rename("Disaster Awareness"=2, "Risk Perception"=3) |> 
+  dplyr::mutate(
+        dplyr::across(dplyr::where(is.numeric), ~round(.x, digits=3)),
+        Item = stringr::str_replace_all(
+            stringr::str_replace_all(Item, "_"," "), "dis","disaster"
+        ) |> stringr::str_to_title()
+        )
+  
+
+loadings4 <- factor_models[[3]]$loadings[,1:4] |> 
+  data.frame() |> 
+  tibble::rownames_to_column(var = "Item") |> 
+  dplyr::rename("Percieved Preparedness"=2,"Preparedness Efficacy"=3,"Disaster Awareness"=4,"Risk Perception"=5) |> 
+  dplyr::mutate(
+        dplyr::across(dplyr::where(is.numeric), ~round(.x, digits=3)),
+        Item = stringr::str_replace_all(
+            stringr::str_replace_all(Item, "_"," "), "dis","disaster"
+        ) |> stringr::str_to_title()
+        )
+  
+loadings1 |>
+    gt::gt(
+        rowname_col = "Item",
+        groupname_col = "Model",
+        row_group_as_column = TRUE,
+
+    ) 
+
+```
+
+```{r}
+#| label: tbl-two-factor
+#| tbl-cap: "Factor Loadings of 2 Factor PAF"
+#| tbl-cap-location: top
+
+factor_models <- readr::read_rds(file = "factor-results.rds")
+
+loadings1 <- factor_models[[1]]$loadings[,1] |> 
+  data.frame() |> 
+  tibble::rownames_to_column(var = "Item") |> 
+  dplyr::rename("Preparedness Affinity"=2) |> 
+  dplyr::mutate(
+        dplyr::across(dplyr::where(is.numeric), ~round(.x, digits=3)),
+        Item = stringr::str_replace_all(
+            stringr::str_replace_all(Item, "_"," "), "dis","disaster"
+        ) |> stringr::str_to_title()
+        )
+
+loadings2 <- factor_models[[2]]$loadings[,1:2] |> 
+  data.frame() |> 
+  tibble::rownames_to_column(var = "Item") |> 
+  dplyr::rename("Disaster Awareness"=2, "Risk Perception"=3) |> 
+  dplyr::mutate(
+        dplyr::across(dplyr::where(is.numeric), ~round(.x, digits=3)),
+        Item = stringr::str_replace_all(
+            stringr::str_replace_all(Item, "_"," "), "dis","disaster"
+        ) |> stringr::str_to_title()
+        )
+  
+
+loadings4 <- factor_models[[3]]$loadings[,1:4] |> 
+  data.frame() |> 
+  tibble::rownames_to_column(var = "Item") |> 
+  dplyr::rename("Percieved Preparedness"=2,"Preparedness Efficacy"=3,"Disaster Awareness"=4,"Risk Perception"=5) |> 
+  dplyr::mutate(
+        dplyr::across(dplyr::where(is.numeric), ~round(.x, digits=3)),
+        Item = stringr::str_replace_all(
+            stringr::str_replace_all(Item, "_"," "), "dis","disaster"
+        ) |> stringr::str_to_title()
+        )
+  
+loadings2 |>
+    gt::gt(
+        rowname_col = "Item",
+        groupname_col = "Model",
+        row_group_as_column = TRUE,
+
+    ) 
+
+```
+
+```{r}
+#| label: tbl-four-factor
+#| tbl-cap: "Factor Loadings of 4 Factor PAF"
+#| tbl-cap-location: top
+
+factor_models <- readr::read_rds(file = "factor-results.rds")
+
+loadings1 <- factor_models[[1]]$loadings[,1] |> 
+  data.frame() |> 
+  tibble::rownames_to_column(var = "Item") |> 
+  dplyr::rename("Preparedness Affinity"=2) |> 
+  dplyr::mutate(
+        dplyr::across(dplyr::where(is.numeric), ~round(.x, digits=3)),
+        Item = stringr::str_replace_all(
+            stringr::str_replace_all(Item, "_"," "), "dis","disaster"
+        ) |> stringr::str_to_title()
+        )
+
+loadings2 <- factor_models[[2]]$loadings[,1:2] |> 
+  data.frame() |> 
+  tibble::rownames_to_column(var = "Item") |> 
+  dplyr::rename("Disaster Awareness"=2, "Risk Perception"=3) |> 
+  dplyr::mutate(
+        dplyr::across(dplyr::where(is.numeric), ~round(.x, digits=3)),
+        Item = stringr::str_replace_all(
+            stringr::str_replace_all(Item, "_"," "), "dis","disaster"
+        ) |> stringr::str_to_title()
+        )
+  
+
+loadings4 <- factor_models[[3]]$loadings[,1:4] |> 
+  data.frame() |> 
+  tibble::rownames_to_column(var = "Item") |> 
+  dplyr::rename("Percieved Preparedness"=2,"Preparedness Efficacy"=3,"Disaster Awareness"=4,"Risk Perception"=5) |> 
+  dplyr::mutate(
+        dplyr::across(dplyr::where(is.numeric), ~round(.x, digits=3)),
+        Item = stringr::str_replace_all(
+            stringr::str_replace_all(Item, "_"," "), "dis","disaster"
+        ) |> stringr::str_to_title()
+        )
+  
+loadings4 |>
+    gt::gt(
+        rowname_col = "Item",
+        groupname_col = "Model",
+        row_group_as_column = TRUE,
+    ) |> 
+    gt::cols_width(
+        dplyr::everything() ~ px(100)
+    )
+
+```
+
+::: {.pdf}
+\newpage
+:::
+
+## Code {.appendix}
+
+The code used to perform the analysis above was done in four chunks: data wrangling, reliability analysis, validity analysis, and factor analysis. The code can also be found in this Github repository: ["https://github.com/jamann246/pyschometrics-final"].
+
+### Data Wrangling
+```{r}
+#| label: "data-wrangling"
+#| echo: true
+#| eval: false
+
+# this file is for the ingest and wrangling of the data needed 
+# for the analysis of psychometric properties of the nhs survey
+
+# load the full dataset
+nhs_raw <- readxl::read_excel(
+  path = "./fema_national_household_survey_2023/fema_national_household_survey_2023_data_and_codebook.xlsx",
+  sheet = "Core Survey",
+  skip = 1
+) |> 
+  # dplyr::filter(sample == "National") |> 
+  dplyr::select(
+    # scale
+    dis_prep, 
+    dis_soc, 
+    dis_exp,  # experience
+    dis_perception, # risk perception
+    dis_stepshelp, # efficacy
+    dis_confidence,  # efficacy
+    dplyr::starts_with('dis_awareness'), # awareness
+
+    # criterion
+    dplyr::starts_with("dis_prepactions"),
+
+    # content
+    disability, care, numadult, numchild, age,
+    homeownership, income_agg, rurality,
+
+    # other sample stuff
+    primarylanguage, sex, education, ethnicity, race_selfid
+
+  ) |> 
+  dplyr::mutate(
+    dplyr::across(
+      dplyr::everything(), 
+      ~dplyr::if_else(.x == "Blank", NA, .x)
+    )
+  )
+
+write.csv(nhs_raw, "nhs-raw.csv")
+
+# convert the scale data to numeric
+nhs <- nhs_raw |> 
+  dplyr::mutate(
+    dis_prep = 
+      factor(
+        dis_prep, 
+        levels = c(
+          "Don't know",
+          "No",
+          "Maybe",
+          "Yes",
+          "Yes, and I have taken steps to prepare",
+          "Yes, and preparedness is part of my everyday life"
+        ),
+        ordered = TRUE
+      ),
+    dis_exp = 
+      factor(
+        dis_exp, 
+        levels = c("Don't know","No","Yes"),
+        ordered = TRUE
+      ), 
+    dis_soc = 
+      factor(
+        dis_soc, 
+        levels = c(
+          "Don't know", 
+          "I am NOT prepared, and I do not intend to prepare in the next year", 
+          "I am NOT prepared, but I intend to start preparing in the next year",
+          "I am NOT prepared, but I intend to get prepared in the next six months",
+          "I have been prepared for LESS than a year",
+          "I have been prepared for MORE than a year and I continue preparing"
+        ),
+        ordered = TRUE
+      ),
+    dis_perception = 
+      factor(
+        dis_perception, 
+        levels = c(
+          "Don't know",
+          "Unlikely",
+          "Likely",
+          "Very likely"
+        ) ,
+        ordered = TRUE
+      ),
+    dis_stepshelp = 
+      factor(
+        dis_stepshelp, 
+        levels = c(
+          "Don't know",
+          "Not at all",
+          "Very little",
+          "Somewhat",
+          "Quite a bit",
+          "A great deal"
+        ),
+        ordered = TRUE
+      ),
+    dis_confidence = 
+      factor(
+        dis_confidence, 
+        levels = c(
+          "Don't know",
+          "Not at all confident",
+          "Slightly confident",
+          "Somewhat confident",
+          "Moderately confident",
+          "Extremely confident"
+        ),
+        ordered = TRUE
+      ),
+      dis_awareness_effect = 
+        factor(
+          dis_awareness_effect, 
+          levels = c(
+            "Don't know",
+            "No",
+            "Yes"
+          ),
+          ordered = TRUE 
+        ),    
+    dis_awareness_count = rowSums(
+      !is.na(
+        nhs_raw[, c(
+          'dis_awareness_a','dis_awareness_b','dis_awareness_c','dis_awareness_d',
+          'dis_awareness_e','dis_awareness_f','dis_awareness_g','dis_awareness_h',
+          'dis_awareness_i','dis_awareness_j','dis_awareness_k','dis_awareness_l',
+          'dis_awareness_m','dis_awareness_n'
+        )]
+      )
+    ),
+    dis_prepactions_count = rowSums(
+      !is.na(
+        nhs_raw[, c(
+          "dis_prepactions_a","dis_prepactions_b","dis_prepactions_c","dis_prepactions_d",        
+          "dis_prepactions_e", "dis_prepactions_f","dis_prepactions_g","dis_prepactions_h",   
+          "dis_prepactions_i","dis_prepactions_j","dis_prepactions_k","dis_prepactions_l",       
+          "dis_prepactions_m","dis_prepactions_n"
+        )]
+      )
+    ),
+    disability = dplyr::if_else(
+      disability == "Disability",
+      1, 0
+    ),
+    care = dplyr::if_else(
+      care == "Yes",
+      1, 0
+    ),
+    homeownership = dplyr::if_else(
+      homeownership == "Own",
+      1, 0
+    ),
+    income_agg = factor(
+      income_agg, 
+      levels = c("Less than $50k","$50,000 to $99,999","$100K +")
+    ),
+    rurality = dplyr::if_else(
+      rurality == "Rural", 
+      1, 0
+    ),
+    age = substr(age, 1,1)
+  ) |> 
+  dplyr::select(
+    dis_prep, dis_soc, dis_exp, dis_perception, dis_stepshelp, 
+    dis_confidence, dis_awareness_effect, dis_awareness_count,
+    dis_prepactions_count,
+    disability, care, numchild, numadult, homeownership,
+    income_agg, rurality, age
+  ) |> 
+  dplyr::mutate(
+    dplyr::across(dplyr::everything(), as.numeric),
+    dis_awareness_effect = dplyr::if_else(is.na(dis_awareness_effect), 0, dis_awareness_effect)
+  )
+
+# storing the wrangled dataset
+write.csv(nhs, "nhs-clean.csv")
+
+```
+
+### Reliability Analysis
+
+```{r}
+#| label: "reliability-analysis"
+#| echo: true
+#| eval: false
+
+# this file is being used to conduct a reliability analysis of the target scale
+
+# loading data
+scale <- read.csv("nhs-clean.csv") |> 
+  dplyr::select(
+    dis_prep, 
+    dis_soc, 
+    dis_exp, 
+    dis_perception,
+    dis_stepshelp, 
+    dis_confidence, 
+    dis_awareness_effect, 
+    dis_awareness_count
+  )
+
+# calculating cronbach's alpha
+alpha_results <- psych::alpha(                           
+  as.data.frame(scale),              
+  check.keys = TRUE,                                     
+  max = 100
+)
+
+alpha_results
+
+readr::write_rds(alpha_results, file = "alpha-results.rds")
+
+```
+
+### Validity Analysis
+
+```{r}
+#| label: "validity-analysis"
+#| echo: true
+#| eval: false
+
+# this file will conduct checks for criterion and content validity of the scale
+
+# loading data
+nhs <- read.csv("nhs-clean.csv") |> 
+  dplyr::mutate(
+    preparedness_affinity = 
+      dis_prep + 
+      dis_soc + 
+      dis_exp +  
+      dis_perception + 
+      dis_stepshelp + 
+      dis_confidence + 
+      dis_awareness_effect + 
+      dis_awareness_count
+  ) |> 
+  dplyr::select(
+    -c(X, 
+      dis_prep, 
+      dis_soc, 
+      dis_exp, 
+      dis_perception,
+      dis_stepshelp, 
+      dis_confidence, 
+      dis_awareness_effect, 
+      dis_awareness_count
+    )
+  )
+
+
+# looking at everything at once
+corrplot::corrplot(cor(nhs))
+cor(nhs)[,c('preparedness_affinity')]
+
+# criterion validity
+# looking at concurrent validity 
+criterion_test <- cor.test(nhs$preparedness_affinity, nhs$dis_prepactions_count)
+criterion_validity = tibble::tibble(
+  Type = "Criterion",
+  Variable = "dis_prepactions_count",
+  r = round(criterion_test$estimate, digits = 3),
+  `P-Value` = round(criterion_test$p.value, digits = 3),
+  Pass = ifelse(r >= 0.06, TRUE, FALSE)
+)
+
+# construct validity
+# expected correlated variables (convergent)
+# dis_prep: Have you considered preparing for a disaster? 
+# dis_soc: Thinking about preparing yourself for a disaster, which of the following best represents your degree of preparedness? 
+# disability: Do you have a disability or a health condition that might affect your capacity to respond to an emergency situation (a mobility, hearing, vision, cognitive, or intellectual disability or physical, mental, or health condition)? (includes imputed values)
+# care: Do you currently live with or have primary responsibility for assisting an elderly person or someone with a disability who requires assistance (a mobility, hearing, vision, cognitive, or intellectual disability or physical, mental, or health condition)?
+# numadult: Including yourself, how many adults live in your household? 
+# numchild: How many household members are children under the age of 18? 
+# homeownership: Do you rent or own your home? (includes imputed values)
+# income_agg: Calculated field - Which of the following describes your total household ANNUAL income before taxes? (including imputed values, collapsed into three categories)
+# rurality: Calculated field - rurality designation based on ZIP code, county, and state
+# age: what is your age (categories)
+
+convergent_variables <- colnames(nhs)[2:9]
+
+convergent_validity <- purrr::map_df(
+  convergent_variables, 
+  \(i){
+    test <- cor.test(nhs$preparedness_affinity, nhs[,i])
+    tibble::tibble(
+      Type = "Convergent",
+      Variable = i,
+      r = round(test$estimate, digits = 3),
+      `P-Value` = round(test$p.value, digits = 3),
+      `Pass` = ifelse(test$estimate >= 0.4 & test$estimate <= 0.5, TRUE, FALSE)
+    )
+  }
+  )
+
+validity <- dplyr::bind_rows(criterion_validity, convergent_validity)
+
+write.csv(validity, "validity-results.csv")
+```
+
+### Factor Analysis
+
+```{r}
+#| label: "factor-analysis"
+#| echo: true
+#| eval: false
+
+# this script will be used to conduct exploratory factor analysis
+# I will pay some attention to a potential four factor model to see if it might align with the findings generated by FEMA
+
+# load data
+nhs <- read.csv("nhs-clean.csv") |> 
+  dplyr::select(
+    dis_prep, 
+    dis_soc, 
+    dis_exp, 
+    dis_perception,
+    dis_stepshelp, 
+    dis_confidence, 
+    dis_awareness_effect, 
+    dis_awareness_count
+  )
+
+# checking that the correlations are large enought to analyze
+# p value should be less than 0.05
+bartlett_result <- psych::cortest.bartlett(cor(nhs))
+bartlett_result # passed
+
+# checking that the sample is sufficient
+# overall MSA should be greater than 0.5, all item wise MSA should be greater than 0.5
+kmo_result <- psych::KMO(cor(nhs))
+kmo_result # passed, very good
+# all variables are > 0.5, we don't need to evalute anything for exclusion
+
+# checking the determinate to assess potential multicollinearity 
+# looking for greater than 0.00001
+det(cor(nhs)) # passed
+
+
+# scree plot
+psych::scree(cor(nhs), pc=FALSE)
+
+# Principal Axis Factoring
+
+# Testing a single factor model per the scree plot
+# using an oblique rotation (items and factors are correlated)
+single_factor <- psych::fa(nhs, nfactors = 1, fm = "pa", rotate = "oblimin", max.iter = 1000)
+
+# Summary of the results
+single_factor
+
+# PA1   h2   u2 com
+# dis_prep             0.66 0.44 0.56   1
+# dis_soc              0.69 0.48 0.52   1
+# dis_exp              0.44 0.19 0.81   1
+# dis_perception       0.49 0.24 0.76   1
+# dis_stepshelp        0.63 0.40 0.60   1
+# dis_confidence       0.62 0.38 0.62   1
+# dis_awareness_effect 0.68 0.46 0.54   1
+# dis_awareness_count  0.53 0.29 0.71   1
+
+#                 PA1
+# SS loadings    2.88
+# Proportion Var 0.36
+
+
+# testing a 2 factor model
+two_factor <- psych::fa(nhs, nfactors = 2, fm = "pa", rotate = "oblimin", max.iter = 1000)
+
+# Summary of the results
+two_factor
+
+# PA1   PA2   h2   u2 com
+# dis_prep              0.78 -0.04 0.57 0.43 1.0
+# dis_soc               0.79 -0.01 0.62 0.38 1.0
+# dis_exp               0.12  0.36 0.20 0.80 1.2
+# dis_perception       -0.01  0.57 0.31 0.69 1.0
+# dis_stepshelp        -0.04  0.77 0.56 0.44 1.0
+# dis_confidence        0.11  0.58 0.43 0.57 1.1
+# dis_awareness_effect  0.48  0.25 0.45 0.55 1.5
+# dis_awareness_count   0.39  0.19 0.28 0.72 1.5
+
+#                        PA1  PA2
+# SS loadings           1.79 1.63
+# Proportion Var        0.22 0.20
+# Cumulative Var        0.22 0.43
+# Proportion Explained  0.52 0.48
+# Cumulative Proportion 0.52 1.00
+
+# cronbach's alpha for PA1 in the two factor model
+psych::alpha(nhs |> dplyr::select(dis_soc, dis_prep, dis_awareness_count, dis_awareness_effect)) # 0.67
+
+# cronbach's alpha for PA2 in the two factor model
+psych::alpha(nhs |> dplyr::select(dis_stepshelp, dis_confidence, dis_perception, dis_exp)) # 0.68
+
+# Testing a 4 factor model per the scree plot
+# using an oblique rotation (items and factors are correlated)
+four_factor <- psych::fa(nhs, nfactors = 4, fm = "pa", rotate = "oblimin", max.iter = 1000)
+
+# Summary of the results
+four_factor
+
+# PA1   PA2   PA3   PA4   h2   u2 com
+# dis_prep              0.57  0.02  0.15  0.06 0.50 0.50 1.2
+# dis_soc               0.92  0.01 -0.02  0.00 0.83 0.17 1.0
+# dis_exp               0.09 -0.04  0.05  0.45 0.25 0.75 1.1
+# dis_perception       -0.03  0.03 -0.02  0.69 0.47 0.53 1.0
+# dis_stepshelp        -0.05  0.78  0.01  0.03 0.61 0.39 1.0
+# dis_confidence        0.11  0.65  0.00 -0.03 0.48 0.52 1.1
+# dis_awareness_effect  0.20  0.07  0.45  0.12 0.49 0.51 1.6
+# dis_awareness_count  -0.03  0.01  0.76 -0.02 0.55 0.45 1.0
+
+#                        PA1  PA2  PA3  PA4
+# SS loadings           1.37 1.11 0.93 0.77
+# Proportion Var        0.17 0.14 0.12 0.10
+# Cumulative Var        0.17 0.31 0.43 0.52
+# Proportion Explained  0.33 0.27 0.22 0.18
+# Cumulative Proportion 0.33 0.59 0.82 1.00
+
+# cronbach's alpha for PA1 in the four factor model
+psych::alpha(nhs |> dplyr::select(dis_soc, dis_prep)) # 0.76
+
+# cronbach's alpha for PA2 in the four factor model
+psych::alpha(nhs |> dplyr::select(dis_stepshelp, dis_confidence)) # 0.69
+
+# cronbach's alpha for PA3 in the four factor model
+psych::alpha(nhs |> dplyr::select(dis_awareness_count, dis_awareness_effect)) # 0.46
+
+# cronbach's alpha for PA4 in the four factor model
+psych::alpha(nhs |> dplyr::select(dis_perception, dis_exp)) # 0.46
+
+# storing data
+readr::write_rds(list(single_factor, two_factor, four_factor), file = "factor-results.rds")
+```
+
+::: {.pdf}
+\newpage
+:::
+
+# References {.appendix}
