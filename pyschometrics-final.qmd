@@ -20,7 +20,6 @@ echo: false
 warning: false
 abstract: |
      Natural disasters pose significant risks to physical and mental health as well as financial stability. Household-level preparedness can be life-saving, yet there is limited psychometric analysis of tools measuring disaster preparedness affinity. This study analyzes the psychometric properties of the 2023 National Household Survey (NHS), conducted by FEMA, which includes items designed to measure preparedness affinity. Key findings indicate good reliability and criterion validity, but limited construct validity. Exploratory factor analysis supports a single-factor model representing preparedness affinity. Further refinement of the scale is recommended to improve its psychometric robustness. Disclaimer: FEMA and the Federal Government cannot vouch for the data or analyses derived from these data after the data have been retrieved from the Agency's website.
-
 ---
 
 ## Introduction
@@ -43,9 +42,9 @@ Internal consistency reliability was measured using Cronbach’s alpha. Criterio
 
 The preparedness affinity scale demonstrated good internal consistency reliability with a Cronbach’s alpha of 0.75. However, the considerable difference between the standardized (0.81) and unstandardized alpha values suggests a difference in variation across items, which is likely a result of the different response sets available (see @tbl-alpha). Additionally, it was found that the raw alpha value would increase to 0.79 if the item counting the number of sources participants encountered that build awareness of preparedness resources (see @tbl-alpha-drop).
 
-Preparedness affinity demonstrated a moderately strong correlation (r = 0.67) with the total number of preparedness actions taken, providing evidence for good criterion validity. It was hypothesized that disability status, caretaker status, the number of children and adults in a household, homeownership status, income, rurality, and age might have convergent relationships with preparedness affinity and support construct validity. However, no substantial evidence of convergent construct validity was found, as correlations with demographic variables were negligible (r < 0.2), suggesting limited alignment with external constructs(see @tbl-correlations). There were no reasonable candidates to assess divergent validity in the dataset. 
+Preparedness affinity demonstrated a moderately strong correlation (r = 0.67) with the total number of preparedness actions taken, providing evidence for good criterion validity. It was hypothesized that disability status, caretaker status, the number of children and adults in a household, homeownership status, income, rurality, and age might have convergent relationships with preparedness affinity and support construct validity. However, no substantial evidence of convergent construct validity was found, as correlations with demographic variables were negligible (r \< 0.2), suggesting limited alignment with external constructs(see @tbl-correlations). There were no reasonable candidates to assess divergent validity in the dataset.
 
-An initial scree plot (see @fig-scree-plot) indicated that only a one factor model would be appropriate according to the Kaiser-Guttman rule. However, there were large drops in the eigen values after two and four factors. While these drops do not necessarily suggest valid factor structures, they were of interest because of the hypothesized factor structure. Exploratory Factor Analysis indicated that a single-factor model explained 36% of the variance with strong factor loadings across all items (see @tbl-single-factor). A two-factor model explained 43% of the variance with reduced complexity and was interpreted as “Disaster Awareness” and “Risk Perception” with Cronbach’s alphas of 0.67 and 0.68, respectively (see @tbl-two-factor). As expected, the four-factor model failed to produce distinct factors with overlapping loadings (see @tbl-four-factor). The factors that it did identify, however, were precieved self preparedness ($\alpha = 0.76$), preparedness efficacy ($\alpha = 0.69$), disaster awareness ($\alpha = 0.46$), and risk perception ($\alpha = 0.46$). These only somewhat aligned with the hypothesized factors. 
+An initial scree plot (see @fig-scree-plot) indicated that only a one factor model would be appropriate according to the Kaiser-Guttman rule. However, there were large drops in the eigen values after two and four factors. While these drops do not necessarily suggest valid factor structures, they were of interest because of the hypothesized factor structure. Exploratory Factor Analysis indicated that a single-factor model explained 36% of the variance with strong factor loadings across all items (see @tbl-single-factor). A two-factor model explained 43% of the variance with reduced complexity and was interpreted as “Disaster Awareness” and “Risk Perception” with Cronbach’s alphas of 0.67 and 0.68, respectively (see @tbl-two-factor). As expected, the four-factor model failed to produce distinct factors with overlapping loadings (see @tbl-four-factor). The factors that it did identify, however, were precieved self preparedness ($\alpha = 0.76$), preparedness efficacy ($\alpha = 0.69$), disaster awareness ($\alpha = 0.46$), and risk perception ($\alpha = 0.46$). These only somewhat aligned with the hypothesized factors.
 
 ## Discussion
 
@@ -67,7 +66,7 @@ Finally, the factor analysis results highlight the need for additional evidence 
 
 The 2023 NHS provides a promising foundation for measuring disaster preparedness affinity, offering strong reliability and acceptable criterion validity. However, the scale’s limited construct validity and inconsistent response formats highlight the need for further refinement. Future research should focus on developing a more comprehensive model of preparedness affinity, incorporating additional measures to establish convergent and divergent validity. Longitudinal studies are essential to evaluate test-retest reliability, while uniform response formats could enhance scale coherence. With these advancements, the NHS preparedness affinity scale could become a robust tool for assessing and promoting disaster preparedness at the individual and community levels.
 
-::: {.pdf}
+::: pdf
 \newpage
 :::
 
@@ -365,15 +364,16 @@ loadings4 |>
 
 ```
 
-::: {.pdf}
+::: pdf
 \newpage
 :::
 
 ## Code {.appendix}
 
-The code used to perform the analysis above was done in four chunks: data wrangling, reliability analysis, validity analysis, and factor analysis. The code can also be found in this Github repository: ["https://github.com/jamann246/pyschometrics-final"].
+The code used to perform the analysis above was done in four chunks: data wrangling, reliability analysis, validity analysis, and factor analysis. The code can also be found in this Github repository: [Github Repository](https://github.com/jamann246/pyschometrics-final).git
 
 ### Data Wrangling
+
 ```{r}
 #| label: "data-wrangling"
 #| echo: true
@@ -815,7 +815,7 @@ psych::alpha(nhs |> dplyr::select(dis_perception, dis_exp)) # 0.46
 readr::write_rds(list(single_factor, two_factor, four_factor), file = "factor-results.rds")
 ```
 
-::: {.pdf}
+::: pdf
 \newpage
 :::
 
